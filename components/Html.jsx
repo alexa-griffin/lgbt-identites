@@ -9,5 +9,7 @@ export default props =>
 </head>
 <body>
   { props.children }
+  {/* chrome hack */}
+  <script> </script>
 </body>
 </html>
