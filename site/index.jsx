@@ -1,7 +1,6 @@
-
 import Html from "components/Html.jsx"
 
 export default props => 
-<Html title="Hello jsx static!">
-  <h1>{ props.greetings }</h1>
+<Html stylesheet-href="assets/style/home.sass" title="Lgbt Identities">
+  <h1></h1>
 </Html>
