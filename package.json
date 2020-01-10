@@ -1,0 +1,13 @@
+{
+  "name": "lgbt-identites",
+  "version": "1.0.0",
+  "description": "A package created by jsxs-static-scripts",
+  "scripts": {
+    "start": "jsxs start",
+    "build": "jsxs build"
+  },
+  "private": true,
+  "dependencies": {
+    "jsx-static": "^1.1.5"
+  }
+}
