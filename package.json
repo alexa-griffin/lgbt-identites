@@ -8,6 +8,6 @@
   },
   "private": true,
   "dependencies": {
-    "jsx-static": "^1.1.5"
+    "jsx-static": "^1.1.7"
   }
 }
