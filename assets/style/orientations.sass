@@ -5,7 +5,7 @@
 
 section.content
   +guide()
-  padding-top: 100px
+  padding-top: 120px
   >h1
     font-size: 3rem
   >p
@@ -23,6 +23,9 @@ section.content
         display: inline-block
         width: calc(50% - 10px)
         vertical-align: middle
+        @media (max-width: 700px)
+          width: calc(100% - 10px)
+
       .flag
         width: 10px
         height: 100%

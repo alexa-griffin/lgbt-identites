@@ -4,10 +4,11 @@
 @import "mods/_header"
 
 .hero
-  height: 100vh
+  min-height: 100vh
   display: flex
   justify-content: center
   flex-direction: column
+  padding-top: 120px
   +guide()
   h1
     font-size: 3rem
@@ -23,7 +24,7 @@
       padding: 1rem 3rem 
       box-shadow: 0 12px 24px -8px rgba(#000, 0.2)
       background-color: $accent
-      margin-right: 32px
+      margin: 0 32px 32px 0
       transform: scale(1.0) translateZ(0) perspective(1px)
       backface-visibility: hidden
       -webkit-font-smoothing: subpixel-antialiased

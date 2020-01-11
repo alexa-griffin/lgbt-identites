@@ -3,7 +3,7 @@ export default props => <header>
     <ul>
       <li><a href="index.jsx">Home</a></li>
       <li><a href="orientations.jsx">Orientations</a></li>
-      <li><a href="">Identities</a></li>
+      <li><a href="identities.jsx">Identities</a></li>
     </ul>
   </nav>    
 </header>
