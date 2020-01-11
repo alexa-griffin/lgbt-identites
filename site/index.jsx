@@ -8,7 +8,7 @@ export default props =>
   <section className="hero">
     <h1>LGBTQ+ Identites and Orientations</h1>
     <p>Because people have trouble remembering every identity or orientation out there I have created this website as a reference. <br/>
-    If there is something I have missed or am mistaken please feel free to <a href="https://github.com/alexa-griffin/lgbt-identites/issues">open an issue</a></p>
+    If there is something I have missed or am mistaken please feel free to <a href="https://github.com/alexa-griffin/lgbt-identites/issues">open an issue</a> but please understand I am only human.</p>
     <p>This website was made as a test for <a href="https://www.npmjs.com/package/jsx-static">jsx-static</a>.</p>
     <div className="categories">
       <a href="">Identities</a>

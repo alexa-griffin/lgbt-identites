@@ -9,6 +9,14 @@ export default props => <Html stylesheet-href="assets/style/orientations.sass"  
     <div className="orientations">
       {
         props.orientations.map(orientation => <div>
+          <div className="flag">
+            {
+              orientation.colors.map(color => <div style={{
+                backgroundColor: color,
+                height: 1 / orientation.colors.length * 100 + "%",
+              }}></div>)
+            }
+          </div>
           <div>{ (orientation.type === "sexual" || orientation.type === "both") && <>
             <h3>{ orientation.prefix + "sexual" }</h3>
             <p>{ ((typeof orientation.description) === "function" ? orientation.description() : "Sexually " + orientation.description) }</p>
@@ -17,6 +25,7 @@ export default props => <Html stylesheet-href="assets/style/orientations.sass"  
             <h3>{ orientation.prefix + "romantic" }</h3>
             <p>{ ((typeof orientation.description) === "function" ? orientation.description() : "Romantically " + orientation.description) }</p>
           </> }</div>
+          { orientation.note && <p>*{orientation.note}</p> }
         </div>)
       }
     </div>

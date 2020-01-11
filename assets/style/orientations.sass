@@ -12,9 +12,24 @@ section.content
     margin-bottom: 96px
   .orientations
     >div
-      display: flex
-      align-items: center
-      justify-content: space-between
       margin-bottom: 64px
+      position: relative
+      padding-left: 20px
+      >p
+        text-align: center
+        margin-bottom: 32px
+        font-size: 16px
       >div
-        width: 50%
+        display: inline-block
+        width: calc(50% - 10px)
+        vertical-align: middle
+      .flag
+        width: 10px
+        height: 100%
+        position: absolute
+        left: 0
+        transition: 0.3s ease width
+        &:hover
+          width: 100%
+        >div
+          width: 100%
