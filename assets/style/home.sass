@@ -1,15 +1,14 @@
 @import "mods/_vars"
 @import "mods/_reset"
 @import "mods/_elements"
+@import "mods/_header"
 
 .hero
   height: 100vh
-  width: 95%
-  max-width: 1180px
   display: flex
   justify-content: center
   flex-direction: column
-  margin: 0 auto
+  +guide()
   h1
     font-size: 3rem
     margin-bottom: 2rem
@@ -22,12 +21,14 @@
       display: inline-block
       border-radius: 12px
       padding: 1rem 3rem 
-      box-shadow: 12px 12px 24px -8px rgba(#000, 0.1), -12px -12px 24px -8px #fff
+      box-shadow: 0 12px 24px -8px rgba(#000, 0.2)
+      background-color: $accent
       margin-right: 32px
       transform: scale(1.0) translateZ(0) perspective(1px)
       backface-visibility: hidden
       -webkit-font-smoothing: subpixel-antialiased
       transition: all 0.2s ease
+      color: rgba(#fff, 0.85)
       &:hover
-        box-shadow: 14px 14px 24px -12px rgba(#000, 0.1), -14px -14px 24px -12px #fff
+        box-shadow: 0 14px 30px -12px rgba(#000, 0.2)
         transform: scale(1.03) translateZ(0) perspective(1px)
